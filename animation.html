@@ -1,0 +1,73 @@
+<style>
+body {
+  background: black;
+  color: #fff;
+  font-family: monospace;
+  padding-top: 25em;
+  display: flex;
+  justify-content: center;
+}
+div {
+    width: 560px;
+    height: 50px;
+    background-color: green;
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 4s; 
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+    from {background-color: green;}
+    to {background-color: yellow;}
+}
+
+@keyframes example {
+    from {background-color: green;}
+    to {background-color: yellow;}
+}
+.typewriter h1 {
+  color: black;
+  overflow: hidden; 
+  border-right: .15em solid blue; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 2s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: blue; }
+}	
+</style>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Experimenting with Animation</title>
+</head>
+<body>
+
+
+<div class="typewriter">
+  <h1>Experimenting with Animation!</h1>
+</div>
+
+ 
+
+
+</body>
+</html>
+
+
+
+
